@@ -89,15 +89,11 @@
   .gal-ph{position:absolute;top:50%;left:50%;transform:translate(-50%,-60%);font-size:2rem;opacity:0.08;color:#1B2D4F;}
   .gal-note{text-align:center;margin-top:20px;font-size:0.75rem;color:#6B7D94;font-style:italic;}
 
-  .part-grid{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:8px;}
-  .part-chip{padding:14px 24px;background:#F4F7FB;border:1px solid #E2E8F0;border-radius:10px;font-size:0.84rem;font-weight:600;color:#1B2D4F;}
-  .part-note{text-align:center;margin-top:18px;font-size:0.72rem;color:#6B7D94;font-style:italic;}
+  .part-img{margin-top:8px;text-align:center;}
+  .part-img img{max-width:100%;height:auto;}
 
-  .cli-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;}
-  .cli-card{background:rgba(255,255,255,0.05);border-radius:12px;padding:20px 12px;text-align:center;border:1px solid rgba(255,255,255,0.06);display:flex;flex-direction:column;align-items:center;gap:8px;}
-  .cli-mono{width:50px;height:50px;border-radius:12px;background:rgba(168,196,224,0.1);display:flex;align-items:center;justify-content:center;font-family:'Oswald',sans-serif;font-size:0.95rem;font-weight:700;color:#A8C4E0;}
-  .cli-name{font-size:0.7rem;font-weight:500;color:rgba(255,255,255,0.5);line-height:1.2;}
-  .cli-note{text-align:center;margin-top:18px;font-size:0.68rem;color:rgba(255,255,255,0.25);font-style:italic;}
+  .cli-img{margin-top:8px;text-align:center;}
+  .cli-img img{max-width:100%;height:auto;}
 
   .ct-intro{max-width:520px;margin:0 auto 44px;font-size:0.95rem;color:rgba(255,255,255,0.5);line-height:1.75;text-align:center;}
   .ct-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:20px;margin-bottom:32px;}
@@ -131,17 +127,7 @@
   <div class="nav-inner">
     <div class="nav-brand">
       <div class="nav-logo">
-        <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-          <circle cx="50" cy="50" r="47" fill="none" stroke="white" stroke-width="3"/>
-          <path d="M18 35 Q30 28 50 32 Q70 28 82 35 Q75 30 50 26 Q25 30 18 35Z" fill="white" opacity="0.9"/>
-          <path d="M18 65 Q30 72 50 68 Q70 72 82 65 Q75 70 50 74 Q25 70 18 65Z" fill="white" opacity="0.9"/>
-          <polygon points="50,30 35,42 65,42" fill="white"/>
-          <rect x="38" y="42" width="24" height="18" fill="white"/>
-          <rect x="46" y="48" width="8" height="12" fill="#1B2D4F" rx="1"/>
-          <text x="50" y="48" text-anchor="middle" font-size="6" font-weight="800" fill="#1B2D4F" font-family="Arial">MME</text>
-          <text x="50" y="92" text-anchor="middle" font-size="8" font-weight="700" fill="white" font-family="Arial" letter-spacing="2">WE PROTECT</text>
-          <text x="78" y="18" font-size="5" fill="white" font-family="Arial">TM</text>
-        </svg>
+        <img src="./logo.png" alt="M.M. Enterprises Logo" style="width:64px;height:64px;border-radius:50%;object-fit:contain;filter:brightness(0) invert(1);">
       </div>
       <div>
         <div class="nav-name">M.M. ENTERPRISES</div>
@@ -260,42 +246,21 @@
     <h2 class="sec-title sec-title-dark" style="font-size:2.4rem;">Our Brand Partners</h2>
     <div class="divider div-center"></div>
     <p style="max-width:620px;margin:0 auto 32px;font-size:0.92rem;color:#6B7D94;line-height:1.75;">We proudly partner with leading global construction chemical and equipment brands. Long-standing relationships ensuring certified, high-performance products on every project.</p>
-    <div class="part-grid">
-      <div class="part-chip">Fosroc</div><div class="part-chip">Thermax</div><div class="part-chip">BASF</div>
-      <div class="part-chip">Fischer</div><div class="part-chip">MYK Laticrete</div><div class="part-chip">Kemper System</div>
-      <div class="part-chip">Supreme</div><div class="part-chip">Recron Fibres</div><div class="part-chip">Sika</div>
-      <div class="part-chip">CICO</div><div class="part-chip">MYK Arment</div><div class="part-chip">Bosch Power Tools</div>
-      <div class="part-chip">Penetron</div><div class="part-chip">Ardex Endura</div><div class="part-chip">Flowcrete</div>
-      <div class="part-chip">Wendt Chatur</div>
+    <div class="part-img">
+      <img src="./brand-partner-logos.png.png" alt="Brand Partners - Fosroc, Sika, BASF, Thermax, Fischer, MYK Laticrete, Kemper System, Supreme, Recron, CICO, MYK Arment, Bosch, Penetron, Ardex Endura, Flowcrete, Wendt">
     </div>
-    <p class="part-note">Brand logos will replace these chips once image files are hosted</p>
   </div>
 </section>
 
-<section id="clients" class="section" style="background:#1B2D4F;">
+<section id="clients" class="section" style="background:#fff;">
   <div class="section-inner tc">
-    <div class="sec-label sec-label-light">Our Happy Clients</div>
-    <h2 class="sec-title sec-title-light" style="font-size:2.4rem;">We Value Every Partnership</h2>
-    <div class="divider div-center-light"></div>
-    <p style="max-width:620px;margin:0 auto 36px;font-size:0.92rem;color:rgba(255,255,255,0.48);line-height:1.75;">Over the years, we've had the privilege of working with some of the most respected builders and structural consultants in the industry.</p>
-    <div class="cli-grid">
-      <div class="cli-card"><div class="cli-mono">KP</div><div class="cli-name">Kolte-Patil</div></div>
-      <div class="cli-card"><div class="cli-mono">ANP</div><div class="cli-name">ANP Corp</div></div>
-      <div class="cli-card"><div class="cli-mono">LJM</div><div class="cli-name">LJM Development</div></div>
-      <div class="cli-card"><div class="cli-mono">WP</div><div class="cli-name">Wipro Pari</div></div>
-      <div class="cli-card"><div class="cli-mono">VJ</div><div class="cli-name">Vilas Javdekar</div></div>
-      <div class="cli-card"><div class="cli-mono">P</div><div class="cli-name">Paranjape</div></div>
-      <div class="cli-card"><div class="cli-mono">R</div><div class="cli-name">Rieter</div></div>
-      <div class="cli-card"><div class="cli-mono">S</div><div class="cli-name">Spectral</div></div>
-      <div class="cli-card"><div class="cli-mono">SC</div><div class="cli-name">Strudcom</div></div>
-      <div class="cli-card"><div class="cli-mono">HPA</div><div class="cli-name">HPA Solutions</div></div>
-      <div class="cli-card"><div class="cli-mono">DC</div><div class="cli-name">Delcons</div></div>
-      <div class="cli-card"><div class="cli-mono">GAB</div><div class="cli-name">G.A. Bhilare Consultants</div></div>
-      <div class="cli-card"><div class="cli-mono">JW</div><div class="cli-name">JW Group</div></div>
-      <div class="cli-card"><div class="cli-mono">SS</div><div class="cli-name">Sunil Sethia &amp; Associates</div></div>
-      <div class="cli-card"><div class="cli-mono" style="font-size:0.6rem;">MCCIA</div><div class="cli-name">MCCIA Member</div></div>
+    <div class="sec-label sec-label-blue">Our Happy Clients</div>
+    <h2 class="sec-title sec-title-dark" style="font-size:2.4rem;">We Value Every Partnership</h2>
+    <div class="divider div-center"></div>
+    <p style="max-width:620px;margin:0 auto 36px;font-size:0.92rem;color:#6B7D94;line-height:1.75;">Over the years, we've had the privilege of working with some of the most respected builders and structural consultants in the industry.</p>
+    <div class="cli-img">
+      <img src="./client-logos.png.png" alt="Our Clients - Kolte-Patil, ANP Corp, LJM Development, Wipro Pari, Vilas Javdekar, Paranjape, Rieter, Spectral, Strudcom, HPA Solutions, Delcons, G.A. Bhilare, JW Group, Sunil Sethia">
     </div>
-    <p class="cli-note">&#8593; Replace monograms with actual client logos once image files are hosted</p>
   </div>
 </section>
 
